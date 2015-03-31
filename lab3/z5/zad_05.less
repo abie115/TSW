@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+html{
+    height:auto;
+    background-color:white;
+     margin: 0;
+    padding:0;
+    body{
+        background-color:lightgray;
+        margin:20px auto 20px auto; 
+        width:90%;
+        border:1px solid darken(darkgray,20%); 
+    }
+}
+
+
+#menu{
+    display:block;
+    float:left;
+    width:20%;
+    padding-left:5px;
+    padding-top:30px;
+    padding-right:5px;
+    .el_menu{
+        background-color:lighten(lightgray, 10%);
+        display:block;
+        border: 1px outset gray;
+        text-align: center;
+        a{
+            color:gray;
+            text-decoration:none;
+    
+        }
+        &:hover{
+             background-color:white;
+            border: 1px inset gray;
+        }
+    }
+}
+
+#tresc{
+    background-color:lighten(lightgray, 10%);
+    padding:30px 20px 30px 20px;
+    display:block;
+    margin-left:20%;
+    border-left:3px solid gray;
+   overflow: hidden;
+}
+
+#naglowek{
+    width:auto;
+    clear:both;
+    border-bottom:1px solid black;
+    background:darkgray;
+    padding:5px;
+    color:lighten(black, 10%);
+    
+}
+
+#stopka{
+    width:auto;
+    clear:both;
+    border-top:1px solid black;
+    background:darkgray;
+    padding:5px;
+    color:lighten(black, 10%);
+}

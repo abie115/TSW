@@ -1,0 +1,42 @@
+html,body{
+    height:100%;
+    padding:0;
+    margin:0;
+}
+
+#outer{
+    height:100%;
+    display:flex;   
+    justify-content: space-between;
+    align-items: center;
+    //flex-direction:column;
+      .box{
+            background-color:darkgray;
+            // text-align:center;          
+             padding:20px;
+             color:white;
+             font-weight: bold;
+             //align-self:center;
+            .generate(1);
+            .generate(@i) when (@i<=3){
+                 &:nth-child(@{i}) {
+                    background-color: darken(rgb(168, 168, 168), @i * 10%);
+                }.generate(@i+1);
+            }
+          &:nth-child(1){
+              align-self:flex-start;
+          }
+          &:nth-child(2){
+              align-self:center;
+          }
+            
+          &:nth-child(3){
+              align-self:flex-end;
+          }
+            
+            
+         }
+    
+      
+         
+     }

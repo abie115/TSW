@@ -1,0 +1,93 @@
+*{margin:0; padding:0;}
+
+html,body{
+margin:auto;
+padding:0;
+height:100%;
+
+
+    
+}
+#content{
+display:flex;
+flex-direction:column;
+    min-height: 100%;
+
+
+  
+
+#all{
+    flex: 1 0 auto;
+   // order:0;
+   //  min-height:100%;
+ //    min-height:100%;
+    display:flex;
+    flex-direction:row;
+ //flex: 1 1 auto;
+
+    #menu{
+        order:1;
+        display:flex;
+        //justify-content: center; //na srodku wzgledem pionu
+        flex: 0 0 150px;
+        background-color:darken(lightgray,10%);
+        flex-direction:column;
+        align-items:center;//wzgledem poziomu
+        padding-top:50px;
+        p{
+            align-self: center;
+            background-color:lighten(lightgrey,10%);
+            border-left:3px solid darken(lightgray,30%);
+            border-top:1px solid darken(lightgray,30%);
+            -webkit-border-top-left-radius: 10px;
+		    -moz-border-radius-topleft: 10px;
+		    border-top-left-radius: 10px;
+            padding:5px 30px 5px 30px;
+            margin:5px;
+            font-size:13px;
+        }
+    }
+    
+    #menu2{
+         order:3;
+        display:flex;
+        //justify-content: center; //na srodku wzgledem pionu
+        flex: 0 0 150px;
+        background-color:darken(lightgray,10%);
+        flex-direction:column;
+        align-items:center;//wzgledem poziomu
+        padding-top:50px;
+        p{
+            align-self: center;
+            background-color:lighten(lightgrey,10%);
+            border-left:3px solid darken(lightgray,30%);
+            border-top:1px solid darken(lightgray,30%);
+            -webkit-border-top-left-radius: 10px;
+		    -moz-border-radius-topleft: 10px;
+		    border-top-left-radius: 10px;
+            padding:5px 30px 5px 30px;
+            margin:5px;
+            font-size:13px;
+        }
+    }
+    #main{ 
+        order:2;
+        display:flex;
+        flex-direction:column;
+        background-color:lightgray;
+        padding:20px;
+        p{
+             padding:10px 10px 10px 0;
+        }
+    }
+      #stopka{
+          order:1;
+ flex: 1 0 auto;
+      background-color: red;
+   
+       
+    }
+ 
+}
+}
+ 

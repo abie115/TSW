@@ -1,0 +1,39 @@
+html,body{
+     background-color:lightgray;
+    margin:0;
+    padding:0;
+     height:100%;
+     overflow: hidden;
+}
+@color: lightgray;
+
+#menu{
+
+    background-color:lighten(lightgray, 10%);
+    padding:5px 10px 5px 10px;
+    text-align: center;
+    border: 3px outset darken(darkgray,20%);    
+    
+    .el_menu{
+        display:inline-block;
+        border: 1px outset darken(darkgray,20%);
+        text-decoration:none;
+        padding:0 5px 0 5px;  
+  
+        a{  
+            color:maroon;
+             text-decoration:none;
+         }
+            &:hover{
+                background-color:white;
+                border: 1px inset darken(darkgray,20%);
+            }      
+    }
+}
+#tresc{
+    width:100%;
+    height:100%;
+    overflow-y: auto;
+	position: fixed;
+
+}

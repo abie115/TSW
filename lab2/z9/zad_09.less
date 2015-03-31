@@ -1,0 +1,36 @@
+body{
+     background-color:lightgray;
+    margin:0;
+}
+@color: lightgray;
+
+#menu{
+    background-color:lighten(lightgray, 10%);
+    padding:5px 10px 5px 10px;
+    text-align: center;
+    border: 3px outset darken(darkgray,20%);
+    
+    
+    .el_menu{
+        display:inline-block;
+        border: 1px outset darken(darkgray,20%);
+        text-decoration:none;
+        padding:0 5px 0 5px;  
+  
+        a{  
+            color:maroon;
+             text-decoration:none;
+         }
+            &:hover{
+                background-color:white;
+                border: 1px inset darken(darkgray,20%);
+
+               /* border-right: 1px solid gray;
+                border-bottom: 1px solid gray;
+                border-top: 1px solid black;
+                border-left: 1px solid black;*/
+            }
+          
+        
+    }
+}
